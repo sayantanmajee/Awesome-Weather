@@ -10,7 +10,7 @@ function Forecast(props) {
       <hr className="my-2" />
       <div className="flex flex-row items-center justify-between">
         {props.items.map((item) => (
-          <div className="flex flex-col items-center justify-center space-y-2">
+          <div key={item.title} className="flex flex-col items-center justify-center space-y-2">
             <span>{item.title}</span>
             <img src={iconURLFromCode(item.icon)} alt="" className="h-10 w-10" />
             <span className="font-bold">{`${item.temp.toFixed()}°`}</span>

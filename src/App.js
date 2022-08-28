@@ -59,7 +59,7 @@ function App() {
         </div>
       )}
 
-      <ToastContainer autoClose={5000} theme="colored" newestOnTop={true}/>
+      <ToastContainer autoClose={2000} theme="colored" newestOnTop={true}/>
 
     </div>
 

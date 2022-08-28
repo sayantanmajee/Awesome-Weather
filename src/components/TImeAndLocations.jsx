@@ -3,7 +3,6 @@ import { formatToLocalTime } from "../services/WeatherService";
 
 function TImeAndLocations(props) {
 
-  console.log(props.weather)
   return (
     <div className="flex flex-col justify-center items-center my-5">
       <div className="text-gray-300 text-xl">
