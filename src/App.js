@@ -1,8 +1,8 @@
-import react, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import { TopButtons, Inputs, TImeAndLocations, LocationWeather, Forecast } from './components';
 import getFormatedWeatherData from './services/WeatherService';
-import getWeatherData from './services/WeatherService';
+// import getWeatherData from './services/WeatherService';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

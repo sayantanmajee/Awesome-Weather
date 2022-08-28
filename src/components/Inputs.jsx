@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { IoLocationOutline } from "react-icons/io5";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Inputs({ setQuery, units, setUnits }) {
   const [city, setCity] = useState("");
@@ -15,7 +13,6 @@ function Inputs({ setQuery, units, setUnits }) {
 
   const handleLocationClick = () => {
     if (navigator.geolocation) {
-      
       toast.info("Fetching user location...");
 
       navigator.geolocation.getCurrentPosition((position) => {
@@ -31,7 +28,7 @@ function Inputs({ setQuery, units, setUnits }) {
   const handleUnitChange = (e) => {
     const selectedUnit = e.target.name;
     if (units !== selectedUnit) setUnits(selectedUnit);
-  }
+  };
 
   return (
     <div className="flex flex-row my-6 justify-center">
